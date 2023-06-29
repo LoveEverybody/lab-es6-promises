@@ -136,10 +136,42 @@ const brussels0 = obtainInstruction('brusselsSprouts', 0)
     document.querySelector("#brusselsSprouts").innerHTML += `<li>${step0}</li>`
   })
 
-  const brussels1 = obtainInstruction('brusselsSprouts', 1)
+const brussels1 = obtainInstruction('brusselsSprouts', 1)
   .then((step1) => {
     document.querySelector("#brusselsSprouts").innerHTML += `<li>${step1}</li>`
-  })  
-Promise.all([brussels0,brussels1])
-   .then((arrayOfResults) => console.log("Values: ", arrayOfResults))
+  })
+
+const brussels2 = obtainInstruction('brusselsSprouts', 2)
+  .then((step2) => {
+    document.querySelector("#brusselsSprouts").innerHTML += `<li>${step2}</li>`
+  })
+
+const brussels3 = obtainInstruction('brusselsSprouts', 3)
+  .then((step3) => {
+    document.querySelector("#brusselsSprouts").innerHTML += `<li>${step3}</li>`
+  })
+
+const brussels4 = obtainInstruction('brusselsSprouts', 4)
+  .then((step4) => {
+    document.querySelector("#brusselsSprouts").innerHTML += `<li>${step4}</li>`
+  })
+
+const brussels5 = obtainInstruction('brusselsSprouts', 5)
+  .then((step5) => {
+    document.querySelector("#brusselsSprouts").innerHTML += `<li>${step5}</li>`
+  })
+
+const brussels6 = obtainInstruction('brusselsSprouts', 6)
+  .then((step6) => {
+    document.querySelector("#brusselsSprouts").innerHTML += `<li>${step6}</li>`
+  })
+
+const brussels7 = obtainInstruction('brusselsSprouts', 7)
+  .then((step7) => {
+    document.querySelector("#brusselsSprouts").innerHTML += `<li>${step7}</li>`
+    document.querySelector("#brusselsSprouts").innerHTML += `<li>Brussels Sprout is ready!</li>`
+  })
+
+Promise.all([brussels0, brussels1, brussels2, brussels3, brussels4, brussels5, brussels6, brussels7])
+  .then((arrayOfResults) => console.log("Values: ", arrayOfResults))
 //   .catch(error => console.log(error))
